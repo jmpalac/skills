@@ -89,6 +89,34 @@ The frontmatter requires only two fields:
 
 The markdown content below contains the instructions, examples, and guidelines that Claude will follow. For more details, see [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills).
 
+# Use This Fork Across All Your Projects
+
+If this repo is your own fork, you can turn it into a shared source of skills for every project you work on, instead of copying skills into each one by hand.
+
+In any project's `.claude/settings.json`, add:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "skills": {
+      "source": {
+        "source": "github",
+        "repo": "<your-username>/skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "document-skills@skills": true,
+    "example-skills@skills": true,
+    "claude-api@skills": true,
+    "academy-guide@skills": true,
+    "discernment-nudge@skills": true
+  }
+}
+```
+
+This registers the fork as a marketplace and marks its plugins for that project. On first use, Claude Code will ask you to trust the fork and, since these are external plugins, to install each one (`/plugin install <plugin>@skills` or through the `Browse and install plugins` menu) — after that, they load automatically whenever you open the project.
+
 # Partner Skills
 
 Skills are a great way to teach Claude how to get better at using specific pieces of software. As we see awesome example skills from partners, we may highlight some of them here:
