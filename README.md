@@ -112,7 +112,8 @@ In any project's `.claude/settings.json`, add:
     "academy-guide@skills": true,
     "discernment-nudge@skills": true,
     "humanizer@skills": true,
-    "watch@skills": true
+    "watch@skills": true,
+    "caveman@skills": true
   }
 }
 ```
