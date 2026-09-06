@@ -77,6 +77,15 @@
       "skills": [
         "./skills/humanizer"
       ]
+    },
+    {
+      "name": "watch",
+      "description": "Watches any video URL or local file by handing Claude timestamped frames plus a transcript, tuned for creators deconstructing hooks and retention",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/watch"
+      ]
     }
   ]
 }
