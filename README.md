@@ -110,7 +110,9 @@ In any project's `.claude/settings.json`, add:
     "example-skills@skills": true,
     "claude-api@skills": true,
     "academy-guide@skills": true,
-    "discernment-nudge@skills": true
+    "discernment-nudge@skills": true,
+    "humanizer@skills": true,
+    "watch@skills": true
   }
 }
 ```

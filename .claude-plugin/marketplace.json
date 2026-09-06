@@ -68,6 +68,24 @@
       "skills": [
         "./skills/discernment-nudge"
       ]
+    },
+    {
+      "name": "humanizer",
+      "description": "Rewrites AI-sounding text so it reads like the writer, not a chatbot, without changing what it says",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/humanizer"
+      ]
+    },
+    {
+      "name": "watch",
+      "description": "Watches any video URL or local file by handing Claude timestamped frames plus a transcript, tuned for creators deconstructing hooks and retention",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/watch"
+      ]
     }
   ]
 }
