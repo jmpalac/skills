@@ -86,6 +86,19 @@
       "skills": [
         "./skills/watch"
       ]
+    },
+    {
+      "name": "firecrawl-build",
+      "description": "Adds Firecrawl web search, scraping, and browser interaction to application code, from API key setup to endpoint choice and SDK wiring",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/firecrawl-build",
+        "./skills/firecrawl-build-interact",
+        "./skills/firecrawl-build-onboarding",
+        "./skills/firecrawl-build-scrape",
+        "./skills/firecrawl-build-search"
+      ]
     }
   ]
 }
